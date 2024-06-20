@@ -24,9 +24,11 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
+    "@lexical/react": "^0.16.0",
     "crypto": "^1.0.1",
     "electron-updater": "^6.1.7",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "lexical": "^0.16.0"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^2.0.0",

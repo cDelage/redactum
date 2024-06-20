@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FileRedactum } from '../../main/types/FileRedactum.type'
+import Editor from './features/editor/Editor'
 
 declare global {
   interface Window {
@@ -23,11 +24,10 @@ function App(): JSX.Element {
 
   return (
     <div>
-      Redactum
-      <br />
-      {filepath?.filePath}
-      <br />
-      {filepath?.body}
+      <header>Redactum</header>
+      <main>
+        <Editor/>
+      </main>
     </div>
   )
 }

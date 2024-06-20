@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page A4</title>
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .page-content {
+            height: 100%;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+                min-height: 297mm;
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="page-content">
+            <h1>Page 1</h1>
+            <p>Contenu de la première page.</p>
+            <!-- Ajoutez plus de contenu ici -->
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-content">
+            <h1>Page 2</h1>
+            <p>Contenu de la deuxième page.</p>
+            <!-- Ajoutez plus de contenu ici -->
+        </div>
+    </div>
+    <!-- Ajoutez plus de pages ici si nécessaire -->
+</body>
+</html>
